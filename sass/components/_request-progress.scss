@@ -1,0 +1,218 @@
+section.progressbar {
+  position: relative;
+}
+
+.progressbar {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.progressbar__list {
+  display: flex;
+  justify-content: center;
+}
+
+.progress-bar__item {
+  position: relative;
+}
+
+.progress-bar__item + .progress-bar__item {
+  margin-left: 27px;
+}
+
+.progress-bar__item-description {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--secondary-grey-color);
+}
+
+.progress-bar__item.current > .progress-bar__item-description {
+  color: var(--login-blue-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.progress-bar__item::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: -17px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--secondary-grey-color);
+  border-radius: 50%;
+}
+
+.progress-bar__item::after {
+  position: absolute;
+  content: "";
+  width: 76px;
+  border-top: 2px solid var(--secondary-grey-color);
+}
+
+.progressbar__list .progress-bar__item:last-child::after {
+  display: none;
+}
+
+// FIRST ITEM
+
+.progress-bar__item.first::before {
+  right: 36px;
+}
+
+.progress-bar__item.first.current::before {
+  top: -16px;
+  left: 33px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--login-blue-color);
+}
+
+.progress-bar__item.first.complete::before {
+  background-image: url(../../images/icons/icon-check-vector-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.progress-bar__item.first::after {
+  top: -13px;
+  left: 40px;
+  width: 78px;
+}
+
+.progress-bar__item.first.current::after {
+  width: 84px;
+  border-color: var(--login-blue-color);
+  top: -13px;
+  left: 46px;
+}
+
+.outer-circle.first {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--login-blue-color);
+  border-radius: 50%;
+  top: -22px;
+  left: 27px;
+}
+
+// SECOND ITEM
+
+.progress-bar__item.second::before {
+  left: 22px;
+}
+
+.progress-bar__item.second.current::before {
+  width: 8px;
+  height: 8px;
+  top: -16px;
+  left: 23px;
+  background-color: var(--login-blue-color);
+}
+
+.progress-bar__item.second.complete::before {
+  background-image: url(../../images/icons/icon-check-vector-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.progress-bar__item.second::after {
+  position: absolute;
+  content: "";
+  width: 76px;
+  border-top: 2px solid var(--secondary-grey-color);
+  top: -13px;
+  left: 36px;
+}
+
+.progress-bar__item.second.current::after {
+  left: 37px;
+  width: 84px;
+  border-color: var(--login-blue-color);
+}
+
+.outer-circle.second {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--login-blue-color);
+  border-radius: 50%;
+  top: -22px;
+  left: 17px;
+}
+
+// THIRD ITEM
+
+.progress-bar__item.third::before {
+  left: 33px;
+}
+
+.progress-bar__item.third.current::before {
+  width: 8px;
+  height: 8px;
+  top: -16px;
+  left: 33px;
+  background-color: var(--login-blue-color);
+}
+
+.progress-bar__item.third.complete::before {
+  background-image: url(../../images/icons/icon-check-vector-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.progress-bar__item.third::after {
+  position: absolute;
+  content: "";
+  width: 66px;
+  border-top: 2px solid var(--secondary-grey-color);
+  top: -13px;
+  left: 47px;
+}
+
+.progress-bar__item.third.current::after {
+  left: 37px;
+  width: 76px;
+  border-color: var(--login-blue-color);
+  top: -13px;
+  left: 47px;
+}
+
+.outer-circle.third {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--login-blue-color);
+  border-radius: 50%;
+  top: -22px;
+  left: 27px;
+}
+
+// FOURTH ITEM
+
+.progress-bar__item.fourth::before {
+  left: 14px;
+}
+
+.progress-bar__item.fourth.current::before {
+  left: 14px;
+  width: 8px;
+  height: 8px;
+  top: -16px;
+  left: 15px;
+  background-color: var(--login-blue-color);
+}
+
+.outer-circle.fourth {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--login-blue-color);
+  border-radius: 50%;
+  top: -22px;
+  left: 9px;
+}

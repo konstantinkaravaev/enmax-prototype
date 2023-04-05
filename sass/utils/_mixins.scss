@@ -1,0 +1,27 @@
+@mixin navLinkAfter {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--primary-red-color);
+
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+@mixin navLinkBefore {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  opacity: 0;
+  transform: scaleX(0);
+}

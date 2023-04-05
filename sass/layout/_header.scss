@@ -1,0 +1,142 @@
+.header {
+  border-top: 1px solid #d8d9da;
+  border-bottom: 1px solid #d8d9da;
+}
+
+.header.dashboard {
+  border-top: none;
+}
+
+hr.separator {
+  border-top: 1px solid #d8d9da;
+  margin: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  // border-bottom: 1px solid #d8d9da;
+}
+
+.logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__button,
+.magnifier__button {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: var(--primary-white-color);
+}
+
+.nav-controls__left-side {
+  display: flex;
+  align-items: center;
+  width: 61px;
+}
+
+.nav-controls__left-side > button + button {
+  margin-left: 21px;
+}
+
+.button.menu-button,
+.button.magnifier-button {
+  background-color: inherit;
+}
+
+.span-right {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4c4d4f;
+}
+
+.account-button__log {
+  color: var(--primary-grey-color);
+}
+
+.login-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-button__icon {
+  height: 19px;
+}
+
+.login-button__descrption {
+  font-size: 11px;
+  color: var(--primary-grey-color);
+  font-weight: 600;
+  line-height: 15px;
+  margin-top: 1px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // padding-left: 17px;
+  // padding-right: 21px;
+}
+
+.nav-list__item {
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  // &:active {
+
+  // }
+}
+
+.nav-list__link.home {
+  display: inline-block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--secondary-grey-color);
+  text-decoration: none;
+  transition: color 250ms var(--timing);
+
+  &::after {
+    @include navLinkAfter;
+    bottom: -1px;
+    transition: all 250ms var(--timing);
+  }
+
+  &:hover,
+  &:focus::after {
+    opacity: 1;
+    text-decoration: none;
+    transform: scaleX(1);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--primary-grey-color);
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.nav-list__item + .nav-list__item {
+  margin-left: 25px;
+}

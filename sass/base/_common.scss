@@ -1,0 +1,61 @@
+body {
+  color: inherit;
+  background-color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+button {
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+}
+
+q::before {
+  content: none;
+}
+
+q::after {
+  content: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.text {
+  color: #ffffff;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}

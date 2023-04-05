@@ -1,0 +1,115 @@
+section.dropdown-list {
+  padding-bottom: 40px;
+}
+
+// ACCORDION STYLES
+
+.accordion.dropdown-list {
+  border: none;
+  // border: 1px solid var(--fourth-grey-color);
+  border-color: var(--fourth-grey-color);
+  border-radius: 5px;
+}
+
+.accordion-button.dropdown-list {
+  display: flex;
+  align-items: center;
+
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-right: 15px;
+  padding-left: 21px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.accordion-button.dropdown-list::after {
+  background-image: url("../../images/icons/icon-arrow-down-bg.svg");
+  background-position: 50% 50%;
+}
+
+.accordion-button.dropdown-list:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button.dropdown-list:not(.collapsed) {
+  color: inherit;
+  background-color: inherit;
+  border-bottom: 1px solid var(--fourth-grey-color);
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.accordion-item:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.accordion-button.dropdown-list::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.accordion-button.dropdown-list.meter-services::before {
+  width: 14px;
+  height: 12px;
+  margin-right: 11px;
+  background-image: url("../../images/icons/icon-meter.svg");
+}
+
+.accordion-button.dropdown-list.electricity-services::before {
+  width: 17px;
+  height: 10px;
+  margin-right: 9px;
+  background-image: url("../../images/icons/icon-electricity.svg");
+}
+
+.accordion-button.dropdown-list.neighbourhood-power::before {
+  width: 15px;
+  height: 14px;
+  margin-right: 8px;
+  background-image: url("../../images/icons/icon-neighbourhood-power.svg");
+}
+
+.accordion-body.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-right: 15px;
+  padding-left: 21px;
+}
+
+.accordion-body__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 19px;
+
+  color: var(--secondary-grey-color);
+}
+
+.accordion-body__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--primary-red-color);
+}
+
+.accordion-body__link + .accordion-body__link {
+  margin-top: 9px;
+}

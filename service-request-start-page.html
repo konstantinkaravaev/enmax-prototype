@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Enmax Dashboard Account</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- POPCORN -->
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+
+  <body>
+    <header class="header dashboard">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- NAV CONTROL [ LEFT SIDE ] -->
+          <div class="nav-controls__left-side">
+            <button type="button" class="menu__button">
+              <svg
+                class="menu-button__icon"
+                width="20"
+                height="12"
+                aria-label="menu-checkbox"
+                aria-expanded="false"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/icons/sprite.svg#icon-burger"
+                ></use>
+              </svg>
+            </button>
+            <button type="button" class="magnifier__button">
+              <svg
+                class="magnifire-button__icon"
+                width="20"
+                height="20"
+                aria-label="magnifire-button"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/icons/sprite.svg#icon-magnifire"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- LOGO -->
+          <a href="index.html"
+            ><img
+              src="./images/logo/ENX_Logo_RED.png"
+              class="logo-img"
+              alt=""
+              width="82"
+          /></a>
+
+          <!-- NAV CONTROL [ RIGHT SIDE ] -->
+          <div class="nav-controls__right-side">
+            <a href="login-energy.html" class="login-button">
+              <div class="login-button__icon">
+                <svg
+                  class="login-button__icon"
+                  width="21"
+                  height="21"
+                  aria-label="user-login-button"
+                >
+                  <use
+                    class="icon-menu"
+                    href="./images/icons/sprite.svg#icon-user"
+                  ></use>
+                </svg>
+              </div>
+              <p class="login-button__descrption">Login</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION PRESENT LOCATION -->
+      <section class="present-location service-request">
+        <div class="container">
+          <div class="present-location__wrapper">
+            <a href="#" class="present-location__link your-business"
+              >Your Business
+              <div class="present-location__arrow-wrapper">
+                <svg class="present-location__arrow-icon" width="4" height="8">
+                  <use
+                    class="icon-arrow-sm"
+                    href="./images/icons/sprite.svg#icon-arrow-sm"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+
+            <a href="#" class="present-location__link current"
+              >Service Request</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="service-request__start">
+        <div class="container">
+          <div class="service-request__header-wrapper">
+            <h2 class="service-request__title">New or Temporary Service</h2>
+            <p class="service-request__title-description">
+              Let’s Get Started! Here is <br />
+              what you’ll need.
+            </p>
+          </div>
+
+          <!-- SERVICE DETAILS FORM -->
+          <form action="" class="service-details__form">
+            <div
+              class="service-details__form-group"
+              role="group"
+              aria-labelledby="service-details"
+            >
+              <p class="form-group__description" id="service-details">
+                Service Details including:
+              </p>
+
+              <div class="service-details__labels-wrapper">
+                <input
+                  class="service-details__form-input visually-hidden"
+                  type="checkbox"
+                  name="service-details"
+                  value="phase"
+                  id="phase"
+                />
+                <label for="phase" class="service-details__form-label">
+                  Phase
+                </label>
+
+                <input
+                  class="service-details__form-input visually-hidden"
+                  type="checkbox"
+                  name="service-details"
+                  value="amps"
+                  id="amps"
+                />
+                <label for="amps" class="service-details__form-label">
+                  Amps
+                </label>
+
+                <input
+                  class="service-details__form-input visually-hidden"
+                  type="checkbox"
+                  name="service-details"
+                  value="voltage"
+                  id="voltage"
+                />
+                <label for="voltage" class="service-details__form-label">
+                  Voltage
+                </label>
+              </div>
+            </div>
+
+            <div
+              class="service-details__form-group"
+              role="group"
+              aria-labelledby="site-plan"
+            >
+              <p class="form-group__description" id="service-details">
+                Service Details including:
+              </p>
+
+              <input
+                class="service-details__form-input visually-hidden"
+                type="checkbox"
+                name="service-details"
+                value="drafter-drawing"
+                id="drafter-drawing"
+              />
+              <label
+                for="drafter-drawing"
+                class="service-details__form-label drafter-drawing"
+              >
+                A simple marked up maps screenshot or complex drafter drawing
+              </label>
+            </div>
+
+            <svg
+              class="service-details__form-additional-info"
+              width="18"
+              height="18"
+            >
+              <use
+                class="icon-additional-information"
+                href="./images/icons/sprite.svg#icon-additional-information"
+              ></use>
+            </svg>
+
+            <div class="popover__wrapper">
+              <div class="popover__content">
+                <p class="popover__message">
+                  If you're requesting a service size of 400A or greater we will
+                  also need to see an electrical single line diagram
+                </p>
+              </div>
+            </div>
+          </form>
+
+          <button
+            onclick="location.href='service-request-form-page.html';"
+            class="button service-request"
+          >
+            Start
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-communicate__list">
+          <li class="footer-communicate__item list">
+            <a href="#" class="footer-communicate__link"
+              ><div class="footer-communicate__link-icon-wrapper">
+                <svg
+                  class="footer-communicate__link-icon"
+                  width="14"
+                  height="12.25"
+                  aria-label="contact-footer-button"
+                >
+                  <use
+                    class="icon-contact"
+                    href="./images/icons/sprite.svg#icon-contact"
+                  ></use>
+                </svg>
+              </div>
+              CONTACT US</a
+            >
+          </li>
+          <li class="footer-communicate__item list">
+            <a href="#" class="footer-communicate__link"
+              ><div class="footer-communicate__link-icon-wrapper">
+                <svg
+                  class="footer-communicate__link-icon"
+                  width="14"
+                  height="13.12"
+                  aria-label="feedback-footer-button"
+                >
+                  <use
+                    class="icon-feedback"
+                    href="./images/icons/sprite.svg#icon-feedback"
+                  ></use>
+                </svg>
+              </div>
+              FEEDBACK</a
+            >
+          </li>
+        </ul>
+
+        <div class="footer-social-list__wrapper">
+          <p class="footer-social-list__description">Follow us on</p>
+
+          <ul class="footer-social-list">
+            <li class="footer-social-list__item list">
+              <a href="#" class="footer-social-list__link">
+                <svg
+                  class="footer-social-list__link-icon"
+                  width="21"
+                  height="18"
+                  aria-label="twitter-button"
+                >
+                  <use
+                    class="icon-twitter"
+                    href="./images/icons/sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list__item list">
+              <a href="#" class="footer-social-list__link">
+                <svg
+                  class="footer-social-list__link-icon"
+                  width="21"
+                  height="21"
+                  aria-label="facebook-button"
+                >
+                  <use
+                    class="icon-facebook"
+                    href="./images/icons/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list__item list">
+              <a href="#" class="footer-social-list__link">
+                <svg
+                  class="footer-social-list__link-icon"
+                  width="21"
+                  height="21"
+                  aria-label="linkedin-button"
+                >
+                  <use
+                    class="icon-linkedin"
+                    href="./images/icons/sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list__item list">
+              <a href="#" class="footer-social-list__link">
+                <svg
+                  class="footer-social-list__link-icon"
+                  width="21"
+                  height="15"
+                  aria-label="youtube-button"
+                >
+                  <use
+                    class="icon-youtube"
+                    href="./images/icons/sprite.svg#icon-youtube"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list__item list">
+              <a href="#" class="footer-social-list__link">
+                <svg
+                  class="footer-social-list__link-icon"
+                  width="21"
+                  height="18"
+                  aria-label="instagram-button"
+                >
+                  <use
+                    class="icon-instagram"
+                    href="./images/icons/sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <p class="footer-description">
+            Customers are free to purchase natural gas services or electricity
+            services from a retailer of their choice. For a list of retailers,
+            visit ucahelps.alberta.ca or call 310-4822 (toll free in Alberta).
+          </p>
+
+          <div class="policy">
+            <a href="#" class="policy__legal">Legal</a>
+            <a href="#" class="policy__privacy">Privacy</a>
+          </div>
+
+          <p class="footer__copyrighting">
+            © 2022 ENMMAX Corporation and its subsiduaries. ™ and ©ENMAX
+            Corporation
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- POPPER -->
+    <script src="./js/popover.js" type="module"></script>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

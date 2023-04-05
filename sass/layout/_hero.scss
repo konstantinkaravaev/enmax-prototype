@@ -1,0 +1,63 @@
+.hero {
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 36px;
+  background-image: url("../../images/hero/hero.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero-description__wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 25px;
+}
+
+.hero__description {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.hero__button {
+  display: inline-block;
+  min-width: 127px;
+  padding: 13px 16px;
+  margin-bottom: 33px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 100px;
+
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--primary-white-color);
+}
+
+.hero__elipse-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__elipse {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--grey-color-with-alpha);
+}
+
+.hero__elipse.current {
+  background-color: var(--third-grey-color);
+}
+
+.hero__elipse + .hero__elipse {
+  margin-left: 5px;
+}

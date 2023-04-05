@@ -1,0 +1,202 @@
+section.request-form {
+  padding-bottom: 54px;
+}
+
+.request-form__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+
+  color: var(--primary-grey-color);
+}
+
+// ADDRESS
+
+div.form-field {
+  margin-bottom: 30px;
+}
+
+.form-label.address {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  margin-bottom: 5px;
+
+  color: var(--secondary-grey-color);
+}
+
+.form-control:focus {
+  border-color: var(--login-blue-color);
+  box-shadow: none;
+}
+
+.form-field > input.form-control {
+  height: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.request-form__form > hr {
+  margin-bottom: 20px;
+}
+
+.request-form__form > q {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--primary-grey-color);
+
+  margin-bottom: 17px;
+}
+
+// SITE SELECTION
+
+.form-field.site-selection {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.form-check {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 165px;
+  padding-top: 27px;
+  padding-right: 26px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+
+  border: 1px solid var(--eighth-grey-color);
+  border-radius: 6px;
+
+  color: var(--fifth-grey-color);
+}
+
+.form-check + .form-check {
+  margin-left: 15px;
+}
+
+.form-check-input[type="radio"] {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.form-check-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+
+.form-check__description {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.form-field.site-selection .form-check-label {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label .form-check-label__icon {
+  margin-right: 5px;
+}
+
+.form-check-label__icon {
+  fill: currentColor;
+}
+
+.active {
+  color: var(--login-blue-color);
+  border-color: var(--login-blue-color);
+}
+
+.form-check-input:checked[type="radio"] {
+  background-image: url("../../images/icons/icon-checked.svg");
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-white-color);
+  border-color: var(--login-blue-color);
+}
+
+.form-check-input:focus {
+  border-color: inherit;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input {
+  background-size: unset;
+}
+
+input[type="file"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+// SELECT
+
+.form-select {
+  appearance: none;
+  background-color: transparent;
+
+  padding-top: 11px;
+  padding-left: 17px;
+  padding-bottom: 11px;
+  padding-right: 17px;
+
+  margin: 0;
+  width: 100%;
+  height: 42px;
+  z-index: 1;
+}
+
+label[for="service-request-selection"] {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-grey-color);
+}
+
+.form-select.service-request-select {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--primary-grey-color);
+}
+
+.form-select.service-request-select:focus {
+  border-color: var(--login-blue-color);
+  box-shadow: none;
+}
+
+.service-request-button {
+  margin-bottom: 0;
+  background-color: var(--login-blue-color);
+}
+
+.service-request-button:disabled {
+  background-color: var(--disabled-button-blue);
+}

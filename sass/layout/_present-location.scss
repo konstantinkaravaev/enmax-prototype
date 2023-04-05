@@ -1,0 +1,56 @@
+section.present-location {
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+section.present-location.dashboard {
+  padding-top: 7px;
+  padding-bottom: 40px;
+}
+
+section.present-location.service-request {
+  padding-top: 27;
+  padding-bottom: 0;
+}
+
+section.present-location.service-request__form-page {
+  padding-top: 27;
+  padding-bottom: 0;
+}
+
+.present-location__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.present-location__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  margin-right: 5px;
+}
+
+.present-location__link.home,
+.present-location__link.your-business {
+  color: var(--seventh-grey-color);
+}
+
+.present-location__link.current {
+  color: var(--fifth-grey-color);
+}
+
+.present-location__arrow-wrapper {
+  display: inherit;
+  margin-left: 5px;
+}
+
+.service-details__form {
+  padding-top: 17px;
+  padding-right: 21px;
+  padding-bottom: 35px;
+  padding-left: 21px;
+
+  border: 1px solid var();
+}

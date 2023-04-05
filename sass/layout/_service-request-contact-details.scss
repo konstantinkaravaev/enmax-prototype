@@ -1,0 +1,113 @@
+section.contact-details {
+  padding-top: 49px;
+  padding-bottom: 45px;
+}
+
+section.contact-details .button.service-request-button {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.greeting-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: var(--primary-grey-color);
+}
+
+.contact-details__header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.contact-details__user-wrapper {
+  display: flex;
+}
+
+.contact-details__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  margin-left: 15px;
+
+  color: var(--primary-grey-color);
+}
+
+.contact-details__user-edit-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details__user-edit-wrapper > svg + svg {
+  margin-left: 16px;
+}
+
+hr.separator.contact-details {
+  border-color: var(--seventh-grey-color);
+}
+
+.contact-details__main-information,
+.contact-details__address-information {
+  padding-top: 15px;
+  padding-bottom: 24px;
+}
+
+.contact-details__main-information > .main-information__title,
+.contact-details__address-information > .address-information__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 17px;
+
+  color: var(--fifth-grey-color);
+}
+
+.main-information__wrapper > div,
+.address-information__wrapper > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-information__wrapper > div > p.description,
+.address-information__wrapper > div > p.description {
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-grey-color);
+}
+
+.main-information__wrapper > div + div,
+.address-information__wrapper > div + div {
+  margin-top: 24px;
+}
+
+.main-information__wrapper > div > p {
+  &.email,
+  &.company-name,
+  &.mobile-phone-number,
+  &.direct-phone-number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--primary-grey-color);
+  }
+}
+
+.address-information__wrapper > div > p {
+  &.street-name,
+  &.company-name,
+  &.city,
+  &.area-district,
+  &.country-region {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--primary-grey-color);
+  }
+}

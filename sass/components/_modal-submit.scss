@@ -1,0 +1,70 @@
+.btn.btn-secondary.btn-close-modal {
+  position: absolute;
+  background-color: var(--primary-white-color);
+  border: none;
+  top: 13px;
+  right: 13px;
+}
+
+.modal-dialog {
+  width: 274px;
+
+  top: 50%;
+  left: 50%;
+}
+
+.modal.show .modal-dialog {
+  transform: translate(-50%, -50%);
+}
+
+.modal-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 274px;
+  height: 226px;
+
+  padding-top: 40px;
+  padding-right: 13px;
+  padding-bottom: 40px;
+  padding-left: 13px;
+
+  border-radius: 5px;
+}
+
+.btn.btn-primary.btn-continue {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+
+  background-color: var(--login-blue-color);
+  border: none;
+  border-radius: 100px;
+}
+
+.modal-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--login-blue-color);
+  border-color: none;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  background-color: var(--login-blue-color);
+  border-color: none;
+}

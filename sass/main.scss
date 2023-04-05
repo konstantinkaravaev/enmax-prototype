@@ -1,0 +1,38 @@
+@import "utils/variables";
+@import "utils/visually-hidden";
+@import "utils/mixins";
+@import "utils/bootstrap-styles-reset";
+
+@import "base/common";
+@import "base/container";
+
+@import "components/descritpion-slider";
+@import "components/accordion";
+@import "components/popover";
+@import "components/request-progress";
+@import "components/main-button";
+@import "components/save-progress";
+@import "components/back-to-the-top";
+@import "components/modal-submit.scss";
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/applcation-sections";
+@import "layout/dropdown-list";
+
+@import "layout/footer";
+
+// LOGIN PAGE
+@import "layout/header-login";
+@import "layout/present-location";
+@import "layout/login";
+
+// DASHBOARD
+@import "layout/dashboard";
+
+// SERVICE REQUEST PAGES
+@import "layout/service-request-start-page";
+@import "layout/service-request-form-page";
+@import "layout/service-request-site-details";
+@import "layout/service-request-contact-details";
+@import "layout/service-request-summary";

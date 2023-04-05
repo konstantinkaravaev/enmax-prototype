@@ -1,0 +1,216 @@
+section.progressbar {
+  padding-bottom: 0;
+}
+
+section.site-details {
+  padding-bottom: 50px;
+}
+
+.progressbar__list {
+  margin-bottom: 40px;
+}
+
+.save-progress__wrapper {
+  margin-bottom: 28px;
+}
+
+.buttons__wrapper {
+  margin-bottom: 45px;
+}
+
+.button.service-request-button {
+  margin-bottom: 42px;
+}
+
+.site-details__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--primary-grey-color);
+}
+
+.form-field.new-service__checkboxes {
+  flex-direction: row;
+}
+
+.new-service__checkboxes-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-grey-color);
+
+  margin-bottom: 24px;
+}
+
+.form-field.new-service__checkboxes.location,
+.form-field.new-service__checkboxes.phase,
+.form-field.new-service__checkboxes.development-permit,
+.form-field.new-service__checkboxes.generation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.form-field.new-service__checkboxes
+  > .inputs-wrapper
+  > .form-check-input[type="radio"] {
+  position: unset;
+}
+
+.inputs-wrapper > label {
+  margin-bottom: 0;
+}
+
+.inputs-wrapper > input + label {
+  margin-left: 6px;
+}
+
+.inputs-wrapper
+  > label[for="flexRadioDefault1"]
+  + input[name="flexRadioDefault1"] {
+  margin-left: 38px;
+}
+
+.inputs-wrapper
+  > label[for="flexRadioDefault2"]
+  + input[name="flexRadioDefault2"] {
+  margin-left: 21px;
+}
+
+.form-check-input:focus {
+  border-color: var(--login-blue-color);
+}
+
+.form-field.new-service__options.ampacity {
+  margin-top: 20px;
+}
+
+.inputs-wrapper > label + input {
+  margin-left: 21px;
+}
+
+.inputs-wrapper > label[for="flexRadioDefault3"],
+.inputs-wrapper > label[for="flexRadioDefault4"] {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--primary-grey-color);
+}
+
+.accordion-body.additional-details
+  > .accordion-body__checkboxes
+  > hr.separator {
+  margin-top: 27px;
+  margin-bottom: 17px;
+  border-top: 1px solid var(--third-grey-color);
+}
+
+.form-field.additional-details > label.form-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-grey-color);
+  margin-bottom: 5px;
+}
+
+.form-field.additional-details > textarea.form-control {
+  padding-top: 11px;
+  padding-right: 17px;
+  padding-bottom: 11px;
+  padding-left: 17px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  resize: none;
+}
+
+.form-field.additional-details > textarea.form-control::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.file-uploads__general-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: var(--secondary-grey-color);
+  margin-bottom: 27px;
+}
+
+.file-uploads__requirements-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.service-details__form-additional-info.file-uploads {
+  position: unset;
+}
+
+.file-uploads__requirements-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: var(--primary-grey-color);
+}
+
+.button.file-uploads {
+  background-color: var(--login-blue-color);
+  width: 117px;
+  height: 37px;
+
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  margin-bottom: 35px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.file__descritpion {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: var(--primary-grey-color);
+}
+
+.file__descritpion::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.file__descritpion.jpeg::before {
+  background-image: url(../../images/icons/icon-file-jpeg.svg);
+}
+
+.file__descritpion.png::before {
+  background-image: url(../../images/icons/icon-file-png.svg);
+}
+
+
+
+.file-uploads__files-wrapper > div.file-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.file-uploads__files-wrapper > div.file + div.file {
+  margin-top: 31px;
+}
