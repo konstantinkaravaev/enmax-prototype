@@ -116,7 +116,9 @@
   height: 179px;
   background-image: url("../../images/dashboard-new-service-request/new-service-request-background-image.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
+  background-position: center;
 }
 
 .new-service-request > .container {

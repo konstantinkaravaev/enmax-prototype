@@ -31,8 +31,7 @@
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -103,6 +102,7 @@ q::after {
 }
 
 .container {
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -878,6 +878,8 @@ hr.separator {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 480px;
+  margin: 0 auto;
 }
 
 .nav-list__item {
@@ -1205,8 +1207,7 @@ section.dropdown-list {
   font-size: 12px;
   line-height: 16.8px;
   color: var(--primary-white-color);
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .footer__copyrighting {
@@ -1436,20 +1437,6 @@ section.login {
   border-color: var(--login-blue-color);
 }
 
-.login-form__input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--fifth-grey-color);
-}
-
-.login-form__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--fifth-grey-color);
-}
-
 .login-form__input::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -1664,7 +1651,8 @@ section.login {
   height: 179px;
   background-image: url("../../images/dashboard-new-service-request/new-service-request-background-image.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .new-service-request > .container {
@@ -2035,9 +2023,7 @@ input[type=radio]:focus {
 }
 
 .form-select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   padding-top: 11px;
   padding-left: 17px;
@@ -2193,18 +2179,6 @@ section.site-details {
   font-size: 14px;
   line-height: 18px;
   resize: none;
-}
-
-.form-field.additional-details > textarea.form-control::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.form-field.additional-details > textarea.form-control:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .form-field.additional-details > textarea.form-control::placeholder {
